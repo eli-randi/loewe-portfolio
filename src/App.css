@@ -1,0 +1,31 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.my-masonry-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  gap: 20px;
+}
+
+.my-masonry-grid_column {
+  background-clip: padding-box;
+}
+
+.photograph-container {
+  margin-bottom: 10px;
+}
+
+.photograph-container:hover {
+  cursor: pointer;
+
+}
+
+.photograph:hover {
+  background-color: rebeccapurple;
+}
