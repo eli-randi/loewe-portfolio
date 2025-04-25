@@ -12,7 +12,7 @@ const navLinks = [
   { name: 'CONTACT', link: '/contact' },
 ]
 
-export const Layout = ({ children }) => {
+export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
       <div className="headerContainer">

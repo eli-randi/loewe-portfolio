@@ -11,3 +11,12 @@
 .text {
   margin: 0
 }
+
+.link {
+  text-decoration: none;
+  color: #444;
+}
+
+.link:hover {
+  color: #707070;
+}
