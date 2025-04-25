@@ -11,9 +11,16 @@
 
 .menuContainer {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
 .link {
   text-decoration: none;
+  color: #444;
+}
+
+.link:hover {
+  color: #707070;
 }
