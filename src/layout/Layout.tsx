@@ -4,8 +4,10 @@ import Logo from '../assets/temp_logo.png'
 import './Layout.css'
 
 const navLinks = [
-  { name: 'HOME', link: '/' },
-  { name: 'MUSIC', link: '/music' },
+  { name: 'PORTRAITS', link: '/' },
+  { name: 'NATURE', link: '/nature' },
+  { name: 'ART', link: '/art' },
+  { name: 'PRODUCT', link: '/product' },
   { name: 'ABOUT', link: '/about' },
   { name: 'CONTACT', link: '/contact' },
 ]
@@ -17,7 +19,7 @@ export const Layout = ({ children }) => {
         <img src={Logo} className='logo' />
         <div className='menuContainer'>
           {navLinks.map((link) =>
-            <NavLink to={link.link} end className='link'>
+            <NavLink to={link.link} end className='link' key={link.name}>
               {link.name}
             </NavLink>)}
         </div>

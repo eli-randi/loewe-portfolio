@@ -1,0 +1,13 @@
+.outer-box {
+  border: 1px solid black;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 20px
+}
+
+.text {
+  margin: 0
+}
