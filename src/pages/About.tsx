@@ -19,7 +19,7 @@ export const About = () => {
       <div className="outer-container">
         <div>
           <h1 className="heading">LEO HALFEN</h1>
-          About {about?.entries.map((entry) => entry.text)}
+          {about?.entries.map((entry) => entry.text)}
         </div>
         {images?.entries.map((entry) => {
           return <div key={entry.imageUrl.toString()}>
