@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { fetchPhotos, fetchText } from "../api/client";
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import './About.css'
 
 export const About = () => {
@@ -14,13 +15,16 @@ export const About = () => {
     queryFn: () => fetchText(),
   });
 
+  console.log({about})
+
   return (
     <div className="outer-container">
       <h1 className="heading">LEO HALFEN</h1>
       <div className="inner-container">
         <div className="text-container">
 
-          {about?.entries.map((entry) => entry.text)}
+          {about?.entries.map((entry) => { 
+            return documentToReactComponents(entry.text)})}
         </div>
         <div className="image-container">
           {images?.entries.map((entry) =>
