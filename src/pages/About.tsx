@@ -15,22 +15,22 @@ export const About = () => {
   });
 
   return (
-    <div>
-      <div className="outer-container">
-        <div>
-          <h1 className="heading">LEO HALFEN</h1>
+    <div className="outer-container">
+      <h1 className="heading">LEO HALFEN</h1>
+      <div className="inner-container">
+        <div className="text-container">
+
           {about?.entries.map((entry) => entry.text)}
         </div>
-        {images?.entries.map((entry) => {
-          return <div key={entry.imageUrl.toString()}>
+        <div className="image-container">
+          {images?.entries.map((entry) =>
             <img
               key={entry.imageUrl.toString()}
               src={entry.imageUrl}
-              width={'100%'}
-              className='about'
+              className='image'
             />
-          </div>
-        })}
+          )}
+        </div>
       </div>
     </div>
   )
