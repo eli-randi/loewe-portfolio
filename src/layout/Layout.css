@@ -48,4 +48,10 @@
   .disclaimer {
     max-width: 70%;
   }
+
+  .logo-text {
+  width: 70%;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
 }
