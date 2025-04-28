@@ -25,7 +25,6 @@
 }
 
 .image {
-  /* display: block; */
   object-fit: cover;
   width: 48%;
   height: auto;
