@@ -32,10 +32,12 @@ export const fetchText = async () => {
     content_type: 'descriptions',
   })
 
+  console.log({entryItems})
+
   const entries = entryItems.items.map((entry) => {
     const { fields } = entry
     return {
-      text: fields.description
+      text: fields.formattedDescription
     }
   })
 
