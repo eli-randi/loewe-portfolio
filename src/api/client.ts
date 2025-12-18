@@ -1,7 +1,7 @@
 import { createClient } from "contentful";
 
-export const space_id = import.meta.env.CONTENTFUL_SPACE_ID
-export const delivery_token = import.meta.env.CONTENTFUL_DELIVERY_TOKEN
+export const space_id = import.meta.env.VITE_CONTENTFUL_SPACE_ID
+export const delivery_token = import.meta.env.VITE_CONTENTFUL_DELIVERY_TOKEN
 
 const client = createClient({
   space: space_id,
